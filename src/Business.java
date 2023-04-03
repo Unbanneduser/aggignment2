@@ -1,5 +1,4 @@
 import com.csvreader.CsvReader;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
@@ -7,6 +6,24 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+
+/**
+
+This program reads data from a CSV file and provides various functionalities to analyze the data
+such as searching for businesses based on zip codes or NAICS codes, displaying the summary of total
+businesses, closed businesses and new businesses in a particular year.
+The program accepts user commands through the console and provides corresponding outputs.
+@author Zijie Guo
+@version 1.0
+@since 2023-04-02
+@see CsvReader
+@see BufferedReader
+@see InputStreamReader
+@see ArrayList
+@see LinkedList
+@see Queue
+@see Charset
+*/
 
 public class Business {
 
@@ -134,7 +151,7 @@ public class Business {
     }
 
     public static void main(String[] args) {
-        String filePath = "/Users/magicgj/Downloads/Registered_Business_Locations_-_San_Francisco.csv";
+        String filePath = "E:/Registered_Business_Locations_-_San_Francisco.csv";
         readCsvFile(filePath);
     }
 }
